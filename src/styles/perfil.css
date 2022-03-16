@@ -21,9 +21,12 @@ header{
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
     cursor: pointer;
     margin-right: 39px;
+    text-decoration: none;
 }
 
 figure{
