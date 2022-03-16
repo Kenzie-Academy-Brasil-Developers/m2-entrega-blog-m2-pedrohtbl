@@ -1,0 +1,142 @@
+body{
+    font-family: sans-serif;
+    background-color: #F9F9F9;
+}
+header{
+    background-color: #6495ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+    margin-bottom: 22px;
+}
+
+#logout{
+    border: none;
+    border-radius: 5px;
+    background-color: #EDBC64;
+    height: 30px;
+    width: 97px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 39px;
+}
+
+figure{
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+figure>img{
+    width: 49px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+figcaption{
+    color: #FAFAFA;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#novo--post{
+    background-color: #FFFFFF;
+    width: 601px;
+    height: 97px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+    padding-left: 18px;
+    padding-top: 18px;
+    margin-bottom: 36px;
+}
+
+.post{
+    width: 601px;
+    box-sizing: border-box;
+    height: 180px;
+    display: flex;
+    background-color: #FFFFFF;
+    margin-bottom: 6px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-bottom: 18px;
+}
+
+.foto--post{
+    width: 120px;
+}
+.detalhes{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.editar--post{
+    color: #6495ED;
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.apagar--post{
+    color: #ED6464;
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.data--post{
+    color: #989898;
+    font-size: 12px;
+    font-weight: 400;
+}
+.foto--post>img{
+    width: 71px;
+    border-radius: 50%;
+}
+
+.post--content--container{
+    width: 351px;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nome--post{
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+.post--content{
+    color: #5F5C5C;
+    height: 133px;
+    width: 351px;
+    font-size: 16px;
+}
