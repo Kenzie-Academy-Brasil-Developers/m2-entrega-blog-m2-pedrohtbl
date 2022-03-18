@@ -120,6 +120,7 @@ main{
 }
 .foto--post>img{
     width: 71px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -142,4 +143,51 @@ main{
     height: 133px;
     width: 351px;
     font-size: 16px;
+}
+
+.paginacao{
+    border: none;
+    border-radius: 5px;
+    background-color: #EDBC64;
+    height: 30px;
+    width: 97px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.paginacao--container{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.pagina--atual{
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+
+.pagina--anterior{
+    font-size: 10px;
+    color:#5F5C5C;
+}
+
+.proxima--pagina{
+    font-size: 10px;
+    color:#5F5C5C;
+}
+
+.total--pagina{
+    font-size: 10px;
+    color:#5F5C5C;
 }
