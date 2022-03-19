@@ -11,7 +11,7 @@ export class User{
             body:JSON.stringify(user)  
             })
             if(response.ok){
-                window.location.assign("login.html")
+                window.location.assign("/src/pages/login.html")
             }else{
                 console.log('erro')
             }       

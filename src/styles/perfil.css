@@ -37,6 +37,7 @@ figure{
 
 figure>img{
     width: 49px;
+    height: 46px;
     border-radius: 50%;
     margin-right: 9px;
 }
