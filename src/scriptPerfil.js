@@ -1,8 +1,9 @@
-import { PostController } from "./controller/PostController.js";
+import { PerfilController } from "./controller/PerfilController.js";
 import { User } from "./User.js";
 
 const pagina = document.querySelector('.paginacao--container')
 const p = document.querySelector('.pagina--atual')
+
 let postPage = await User.getPost(localStorage.token,1)
 let pageAtual  = postPage.page
 let proximaPage  = postPage.nextPage.replace('page=','')
@@ -12,7 +13,10 @@ if(postPage.previousPage){
 }
 
 if(sessionStorage.getItem('token')){
-    PostController.listarPost('1')
+   PerfilController.listarPost('1')
+   PerfilController.dadosPerfil()
+   PerfilController.criaPost()
+   PerfilController.logOut()
 }else{
     window.location.assign("login.html")
 }
@@ -20,7 +24,7 @@ if(sessionStorage.getItem('token')){
 pagina.addEventListener('click',async (event)=>{
     const btn = event.target
         if(btn.id === 'proxima--page'){
-            PostController.listarPost(proximaPage)
+            PerfilController.listarPost(proximaPage)
             postPage = await User.getPost(localStorage.token,proximaPage)
             proximaPage = postPage.nextPage.replace('page=','')
             pageAnterior  = postPage.previousPage.replace('page=','')
@@ -29,7 +33,7 @@ pagina.addEventListener('click',async (event)=>{
         }
         if(btn.id === 'page--anterior'){
             if(pageAnterior){
-                PostController.listarPost(pageAnterior)
+                PerfilController.listarPost(pageAnterior)
                 postPage = await User.getPost(localStorage.token,pageAnterior)
                 proximaPage = postPage.nextPage.replace('page=','')
                 if(postPage.previousPage){
@@ -41,3 +45,4 @@ pagina.addEventListener('click',async (event)=>{
             }
         }
 })
+

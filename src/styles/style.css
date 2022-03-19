@@ -15,7 +15,7 @@ form{
     display: flex;
     flex-direction: column;
     width: 428px;
-    height: 401px;
+    height: 451px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
@@ -71,6 +71,7 @@ a{
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 h1{
     color: #FFFFFF;

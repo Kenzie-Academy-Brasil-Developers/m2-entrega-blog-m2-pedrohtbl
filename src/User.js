@@ -50,4 +50,49 @@ export class User{
         
         return data
     }
+
+    static async getUser (id,token){
+        const response = await fetch(`${this.path}${id}`, {
+            "method": "GET",
+            "headers": { 
+                "Authorization": `Bearer ${token}`
+            }
+        })
+
+        const data = await response.json()
+
+        return data
+    }
+
+    static async criaPost (token,content){
+        const response = await fetch('https://api-blog-m2.herokuapp.com/post',{
+            method: "POST",
+            headers: {
+                "Authorization": `Bearer ${token}`,
+                "Content-type": "application/json"
+            },
+            body:JSON.stringify(content)  
+        })
+        return response
+    }
+
+    static async apagaPost(token,postId){
+        const response = await fetch(`https://api-blog-m2.herokuapp.com/post/${postId}`,{
+            method: "DELETE",
+            headers: {
+                "Authorization": `Bearer ${token}`
+              }
+        })
+    }
+
+    static async atualizaPost(token,postId,content){
+        const response = await fetch(`https://api-blog-m2.herokuapp.com/post/${postId}`,{
+            method: "PATCH",
+            headers: {
+                "Authorization": `Bearer ${token}`,
+                "Content-type": "application/json"
+              },
+            body:JSON.stringify(content)
+        })
+    }
 }
